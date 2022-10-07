@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.FilterFragment">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:text="@string/history"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        android:layout_margin="8dp">
+
+    <Button
+        android:id="@+id/period7Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="@string/week"
+        android:textSize="13sp"
+        android:layout_margin="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header" />
+
+    <Button
+        android:id="@+id/period30Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/month"
+        android:textSize="13sp"
+        android:backgroundTint="@color/black"
+        android:layout_margin="4dp"
+        app:layout_constraintStart_toEndOf="@id/period7Button"
+        app:layout_constraintTop_toBottomOf="@id/header"/>
+
+    <Button
+        android:id="@+id/periodAllButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/all"
+        android:textSize="13sp"
+        android:backgroundTint="@color/black"
+        android:layout_margin="4dp"
+        app:layout_constraintStart_toEndOf="@id/period30Button"
+        app:layout_constraintTop_toBottomOf="@id/header"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/applyButton"
+        android:layout_height="50dp"
+        android:layout_width="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_arrow2"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
